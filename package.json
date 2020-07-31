@@ -1,0 +1,21 @@
+{
+  "name": "webx1-utils",
+  "version": "1.0.0",
+  "description": "Common utilities for webx1.",
+  "source": "lib/index.js",
+  "main": "dist/webx1-utils.js",
+  "module": "dist/webx1-utils.module.js",
+  "unpkg": "dist/webx1-utils.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "watch": "microbundle watch",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "john robinson <johnrob1880@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.12.3"
+  }
+}
