@@ -1,6 +1,6 @@
 {
   "name": "webx1-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common utilities for webx1.",
   "source": "lib/index.js",
   "main": "dist/webx1-utils.js",
