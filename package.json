@@ -1,13 +1,19 @@
 {
   "name": "webx1-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common utilities for webx1.",
   "source": "lib/index.js",
   "main": "dist/webx1-utils.js",
   "module": "dist/webx1-utils.module.js",
   "unpkg": "dist/webx1-utils.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "microbundle",
+    "build": "npm run clean && npm run build:main && npm run build:umd",
+    "build:main": "microbundle",
+    "build:umd": "microbundle --name webx1Utils --pkg-main false -f umd",
+    "clean": "rm -rf dist",
     "watch": "microbundle watch",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
